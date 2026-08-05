@@ -30,7 +30,7 @@
   <rect class="acc" x="80" y="148" width="32" height="26" rx="4"/>
   <path class="sacc" d="M86 148 v-9 a10 10 0 0 1 20 0 v9" stroke-width="3.5"/>
   <circle fill="#fff" cx="96" cy="160" r="3.6"/>
-  <text class="tm" x="56" y="246" font-size="12" textLength="80" lengthAdjust="spacingAndGlyphs">Enterprise Wi-Fi</text>
+  <text class="tm" x="96" y="246" font-size="12" text-anchor="middle" textLength="100" lengthAdjust="spacingAndGlyphs">Enterprise Wi-Fi</text>
 
   <!-- layer cards -->
   <g class="row r1"><rect fill="#fff" class="sacc" x="200" y="68" width="288" height="40" rx="8" stroke-width="1.6"/>
@@ -43,7 +43,7 @@
     <text class="ink" x="216" y="182" font-size="13" font-weight="800" textLength="100" lengthAdjust="spacingAndGlyphs">Dynamic keys</text>
     <text class="tm" x="216" y="196" font-size="11" textLength="128" lengthAdjust="spacingAndGlyphs">unique per session</text></g>
   <g class="row r4"><rect fill="#fff" class="sacc" x="200" y="212" width="288" height="40" rx="8" stroke-width="1.6"/>
-    <text class="ink" x="216" y="230" font-size="13" font-weight="800" textLength="240" lengthAdjust="spacingAndGlyphs">Protected Management Frames</text>
+    <text class="ink" x="216" y="230" font-size="13" font-weight="800" textLength="196" lengthAdjust="spacingAndGlyphs">Protected Management Frames</text>
     <text class="tm" x="216" y="244" font-size="11" textLength="120" lengthAdjust="spacingAndGlyphs">required on 6 GHz</text></g>
 
   <!-- per-step highlight + check -->

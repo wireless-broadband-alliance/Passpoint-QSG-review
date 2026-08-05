@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 178" role="img"
+     aria-label="Many clients at the access point are filtered so only clean, necessary RADIUS traffic reaches the AAA server">
+  <style>
+    svg { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+    .bg{fill:var(--soft,#e8f4fb)} .acc{fill:var(--acc,#085d8e)}
+    .sacc{fill:none;stroke:var(--acc,#085d8e)} .ok{fill:#1aad55} .oks{fill:none;stroke:#1aad55}
+    .ink{fill:#14211f} text{font-weight:760} .tm{fill:#60706d;font-weight:700}
+    .flow{stroke-dasharray:6 7}
+    @keyframes aaap-dash{to{stroke-dashoffset:-13}}
+    @keyframes aaap-pulse{0%,100%{opacity:.25}50%{opacity:.8}}
+    .flow{animation:aaap-dash 1s linear infinite}
+    .p1{animation:aaap-pulse 2.6s ease-in-out infinite}
+    .p2{animation:aaap-pulse 2.6s ease-in-out infinite .9s}
+    .p3{animation:aaap-pulse 2.6s ease-in-out infinite 1.7s}
+    @media (prefers-reduced-motion: reduce){.flow,.p1,.p2,.p3{animation:none}}
+  </style>
+
+  <rect class="bg" width="280" height="178"/>
+  <ellipse class="ink" cx="120" cy="140" rx="36" ry="5" opacity="0.06"/>
+  <ellipse class="ink" cx="240" cy="146" rx="28" ry="5" opacity="0.06"/>
+
+  <!-- a crowd of clients -->
+  <circle class="acc p1" cx="28" cy="56"  r="4.5" opacity="0.4"/>
+  <circle class="acc"    cx="48" cy="78"  r="4.5" opacity="0.3"/>
+  <circle class="acc p2" cx="30" cy="100" r="4.5" opacity="0.4"/>
+  <circle class="acc"    cx="52" cy="120" r="4.5" opacity="0.3"/>
+  <circle class="acc p3" cx="64" cy="58"  r="4.5" opacity="0.4"/>
+  <circle class="acc"    cx="70" cy="96"  r="4.5" opacity="0.3"/>
+  <text class="tm" x="49" y="150" font-size="9" text-anchor="middle" textLength="64" lengthAdjust="spacingAndGlyphs">Many clients</text>
+
+  <!-- access point guarded by a shield -->
+  <line class="sacc" x1="102" y1="78" x2="98" y2="62" stroke-width="2.5" stroke-linecap="round"/>
+  <line class="sacc" x1="124" y1="78" x2="128" y2="62" stroke-width="2.5" stroke-linecap="round"/>
+  <rect class="sacc" x="88" y="78" width="50" height="32" rx="6" stroke-width="2.5"/>
+  <g transform="translate(142,94)">
+    <path class="sacc" style="fill:var(--soft,#e8f4fb)" d="M0 -18 L15 -12 V6 C15 15 8 21 0 25 C-8 21 -15 15 -15 6 V-12 Z" stroke-width="2.5"/>
+    <path class="oks" d="M-5 2 l3.5 3.5 7 -8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text class="tm" x="113" y="130" font-size="9" text-anchor="middle" textLength="88" lengthAdjust="spacingAndGlyphs">Filter at the edge</text>
+
+  <!-- one clean stream to the AAA server -->
+  <path class="sacc flow" d="M160 92 h56" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- AAA server -->
+  <rect class="sacc" x="218" y="62" width="44" height="60" rx="7" stroke-width="2.5"/>
+  <path class="sacc" d="M218 82 h44 M218 102 h44" stroke-width="1.6" opacity="0.45"/>
+  <circle class="ok" cx="227" cy="72" r="2.2"/>
+  <circle class="acc" cx="227" cy="92" r="2.2" opacity="0.4"/>
+  <circle class="acc" cx="227" cy="112" r="2.2" opacity="0.4"/>
+  <text class="tm" x="240" y="140" font-size="9" text-anchor="middle" textLength="24" lengthAdjust="spacingAndGlyphs">AAA</text>
+</svg>

@@ -2,14 +2,14 @@
      aria-label="The Wi-Fi list shows the profile's display name; the device joins automatically when it matches, no tapping needed">
   <style>
     svg { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
-    .bg{fill:var(--soft,#fffbeb)} .acc{fill:var(--acc,#0b74b1)}
-    .sacc{fill:none;stroke:var(--acc,#0b74b1)} .soft{fill:var(--soft,#fffbeb)}
+    .bg{fill:var(--soft,#fffbeb)} .acc{fill:var(--acc,#d97706)}
+    .sacc{fill:none;stroke:var(--acc,#d97706)} .soft{fill:var(--soft,#fffbeb)}
     .ok{fill:#1aad55} .ink{fill:#14211f}
     text{font-weight:760} .tm{fill:#60706d;font-weight:700}
-    @keyframes cjoin{0%,30%{opacity:0}42%,88%{opacity:1}100%{opacity:0}}
-    @keyframes cwave{0%,30%{opacity:0.25}42%,88%{opacity:1}100%{opacity:0.25}}
-    .join{animation:cjoin 3.6s ease-in-out infinite;opacity:0}
-    .wave{animation:cwave 3.6s ease-in-out infinite}
+    @keyframes cli-join{0%,30%{opacity:0}42%,88%{opacity:1}100%{opacity:0}}
+    @keyframes cli-wave{0%,30%{opacity:0.25}42%,88%{opacity:1}100%{opacity:0.25}}
+    .join{animation:cli-join 3.6s ease-in-out infinite;opacity:0}
+    .wave{animation:cli-wave 3.6s ease-in-out infinite}
     @media (prefers-reduced-motion: reduce){.join,.wave{animation:none}.join{opacity:1}.wave{opacity:1}}
   </style>
 
@@ -17,7 +17,7 @@
   <ellipse class="ink" cx="79" cy="164" rx="42" ry="5" opacity="0.06"/>
 
   <!-- device with its Wi-Fi list -->
-  <rect fill="#fff" class="sacc" x="35" y="16" width="88" height="144" rx="13" stroke-width="2.5"/>
+  <rect fill="#fff" class="sacc" x="35" y="16" width="88" height="144" rx="12" stroke-width="2.5"/>
   <text class="tm" x="45" y="38" font-size="8" textLength="38" lengthAdjust="spacingAndGlyphs">Wi-Fi list</text>
 
   <!-- plain nearby network -->
@@ -28,7 +28,7 @@
   <rect fill="#fff" class="sacc" x="45" y="76" width="68" height="26" rx="5" stroke-width="2"/>
   <text class="ink" x="51" y="92" font-size="8" textLength="46" lengthAdjust="spacingAndGlyphs">MyOperator</text>
   <g class="wave" transform="translate(103,90)">
-    <path class="sacc" d="M-5 2 a7 7 0 0 1 10 0" stroke-width="1.8" stroke-linecap="round"/>
+    <path class="sacc" d="M-5 2 a7 7 0 0 1 10 0" stroke-width="1.6" stroke-linecap="round"/>
     <circle class="acc" cx="0" cy="4" r="1.6"/>
   </g>
 

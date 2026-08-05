@@ -25,7 +25,7 @@
   <!-- a snippet of guide text with an acronym link -->
   <rect fill="#fff" class="sacc" x="40" y="84" width="440" height="64" rx="8" stroke-width="2"/>
   <text class="ink" x="58" y="114" font-size="14" textLength="300" lengthAdjust="spacingAndGlyphs">The network advertises its</text>
-  <text class="link" x="364" y="114" font-size="14" font-weight="800">RCOI</text>
+  <text class="link" x="364" y="114" font-size="14" font-weight="800" textLength="42" lengthAdjust="spacingAndGlyphs">RCOI</text>
   <text class="ink" x="408" y="114" font-size="14" textLength="56" lengthAdjust="spacingAndGlyphs">to say</text>
   <text class="ink" x="58" y="136" font-size="14" textLength="220" lengthAdjust="spacingAndGlyphs">which federation it joins.</text>
   <line class="dot" x1="364" y1="119" x2="406" y2="119"/>

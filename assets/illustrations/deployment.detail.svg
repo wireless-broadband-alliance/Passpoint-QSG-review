@@ -30,7 +30,7 @@
     <circle class="sacc" cx="109" cy="150" r="26" stroke-width="2.5"/>
     <circle class="sacc" cx="109" cy="150" r="15" stroke-width="2.5"/>
     <circle class="acc" cx="109" cy="150" r="5"/>
-    <text class="ink" x="60" y="206" font-size="12" font-weight="800" textLength="92" lengthAdjust="spacingAndGlyphs">Use case</text>
+    <text class="ink" x="109" y="206" font-size="12" font-weight="800" text-anchor="middle" textLength="56" lengthAdjust="spacingAndGlyphs">Use case</text>
   </g>
   <!-- stage 2: features (checklist) -->
   <g class="stage g2">
@@ -41,15 +41,15 @@
     <rect class="acc" x="244" y="132" width="62" height="5" rx="2.5" opacity="0.18"/>
     <rect class="acc" x="244" y="154" width="54" height="5" rx="2.5" opacity="0.18"/>
     <rect class="acc" x="244" y="176" width="58" height="5" rx="2.5" opacity="0.18"/>
-    <text class="ink" x="212" y="206" font-size="12" font-weight="800" textLength="100" lengthAdjust="spacingAndGlyphs">Feature set</text>
+    <text class="ink" x="261" y="206" font-size="12" font-weight="800" text-anchor="middle" textLength="74" lengthAdjust="spacingAndGlyphs">Feature set</text>
   </g>
   <!-- stage 3: launch & operate (gauge) -->
   <g class="stage g3">
     <rect fill="#fff" class="sacc" x="346" y="96" width="134" height="128" rx="10" stroke-width="2.2"/>
     <path class="sacc" d="M388 168 a25 25 0 0 1 50 0" stroke-width="2.5"/>
-    <line class="acc" x1="413" y1="168" x2="428" y2="150" stroke="var(--acc,#1aad55)" stroke-width="3" stroke-linecap="round"/>
+    <line class="sacc" x1="413" y1="168" x2="428" y2="150" stroke-width="3" stroke-linecap="round"/>
     <circle class="acc" cx="413" cy="168" r="4"/>
-    <text class="ink" x="366" y="206" font-size="12" font-weight="800" textLength="96" lengthAdjust="spacingAndGlyphs">Launch + run</text>
+    <text class="ink" x="413" y="206" font-size="12" font-weight="800" text-anchor="middle" textLength="80" lengthAdjust="spacingAndGlyphs">Launch + run</text>
   </g>
 
   <g class="step s1"><rect class="sacc" x="42" y="96" width="134" height="128" rx="10" stroke-width="3"/></g>

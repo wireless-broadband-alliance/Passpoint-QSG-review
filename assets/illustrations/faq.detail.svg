@@ -19,28 +19,27 @@
   <text class="tl title t1" x="28" y="40" font-size="17" textLength="210" lengthAdjust="spacingAndGlyphs">1 · The expectation</text>
   <text class="tl title t2" x="28" y="40" font-size="17" textLength="260" lengthAdjust="spacingAndGlyphs">2 · How it really works</text>
 
-  <!-- support phone -->
+  <!-- support phone with its Wi-Fi list (persistent, so the layout stays put between steps) -->
   <rect fill="#fff" class="sacc" x="60" y="86" width="86" height="150" rx="16" stroke-width="2.5"/>
   <rect class="soft" x="70" y="102" width="66" height="118" rx="4"/>
+  <rect fill="#fff" class="sacc" x="78" y="112" width="50" height="12" rx="3" stroke-width="1.4"/>
+  <rect fill="#fff" class="sacc" x="78" y="130" width="50" height="12" rx="3" stroke-width="1.4"/>
+  <rect fill="#fff" class="sacc" x="78" y="148" width="50" height="12" rx="3" stroke-width="1.4"/>
 
   <!-- STEP 1: the misunderstanding -->
   <g class="step s1">
-    <!-- a wi-fi list on the screen -->
-    <rect fill="#fff" class="sacc" x="78" y="112" width="50" height="12" rx="3" stroke-width="1.4"/>
-    <rect fill="#fff" class="sacc" x="78" y="130" width="50" height="12" rx="3" stroke-width="1.4"/>
-    <rect fill="#fff" class="sacc" x="78" y="148" width="50" height="12" rx="3" stroke-width="1.4"/>
     <circle class="acc" cx="120" cy="172" r="9" opacity="0.25"/><circle class="acc" cx="120" cy="172" r="4"/>
-    <rect class="acc" x="180" y="120" width="300" height="58" rx="12"/>
-    <text class="tw" x="198" y="144" font-size="14" textLength="264" lengthAdjust="spacingAndGlyphs">"I tapped the Wi-Fi network -</text>
-    <text class="tw" x="198" y="164" font-size="14" textLength="250" lengthAdjust="spacingAndGlyphs">do I pick it and sign in?"</text>
+    <rect class="acc" x="180" y="116" width="312" height="66" rx="12"/>
+    <text class="tw" x="198" y="142" font-size="14" textLength="264" lengthAdjust="spacingAndGlyphs">"I tapped the Wi-Fi network -</text>
+    <text class="tw" x="198" y="162" font-size="14" textLength="250" lengthAdjust="spacingAndGlyphs">do I pick it and sign in?"</text>
   </g>
 
   <!-- STEP 2: how it works -->
   <g class="step s2">
-    <g transform="translate(132,108)"><circle class="ok" cx="0" cy="0" r="13"/><path d="M-6 0 l4 4 8 -9" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g>
-    <rect fill="#fff" class="sacc" x="180" y="116" width="312" height="66" rx="12" stroke-width="2"/>
-    <text class="ink" x="198" y="140" font-size="14" font-weight="600" textLength="276" lengthAdjust="spacingAndGlyphs">With the right profile it joins on its</text>
-    <text class="ink" x="198" y="160" font-size="14" font-weight="600" textLength="200" lengthAdjust="spacingAndGlyphs">own - no tapping needed.</text>
+    <g transform="translate(132,136)"><circle class="ok" cx="0" cy="0" r="10"/><path d="M-4.5 0 l3 3 6.5 -7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <rect class="sacc" style="fill:var(--soft,#e8f4fb)" x="180" y="116" width="312" height="66" rx="12" stroke-width="2"/>
+    <text class="ink" x="198" y="142" font-size="14" font-weight="700" textLength="276" lengthAdjust="spacingAndGlyphs">With the right profile it joins on its</text>
+    <text class="ink" x="198" y="162" font-size="14" font-weight="700" textLength="200" lengthAdjust="spacingAndGlyphs">own - no tapping needed.</text>
     <rect class="acc" x="180" y="194" width="248" height="24" rx="12"/>
     <text class="tw" x="194" y="210" font-size="12" font-weight="800" textLength="220" lengthAdjust="spacingAndGlyphs">First check: is the profile installed?</text>
   </g>

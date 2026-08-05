@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 178" role="img"
+     aria-label="RADIUS leaves the access point over a TLS-protected path to redundant AAA servers">
+  <style>
+    svg { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+    .bg{fill:var(--soft,#e8f4fb)} .acc{fill:var(--acc,#085d8e)}
+    .sacc{fill:none;stroke:var(--acc,#085d8e)} .ok{fill:#1aad55} .oks{stroke:#1aad55}
+    .ink{fill:#14211f} text{font-weight:760} .tm{fill:#60706d;font-weight:700}
+    .flow{stroke-dasharray:6 7}
+    @keyframes aaat-dash{to{stroke-dashoffset:-13}}
+    .flow{animation:aaat-dash 1s linear infinite}
+    @media (prefers-reduced-motion: reduce){.flow{animation:none}}
+  </style>
+
+  <rect class="bg" width="280" height="178"/>
+  <ellipse class="ink" cx="60" cy="128" rx="30" ry="5" opacity="0.06"/>
+  <ellipse class="ink" cx="232" cy="156" rx="34" ry="5" opacity="0.06"/>
+
+  <!-- access point -->
+  <line class="sacc" x1="48" y1="76" x2="44" y2="60" stroke-width="2.5" stroke-linecap="round"/>
+  <line class="sacc" x1="70" y1="76" x2="74" y2="60" stroke-width="2.5" stroke-linecap="round"/>
+  <rect class="sacc" x="34" y="76" width="50" height="32" rx="6" stroke-width="2.5"/>
+  <circle class="acc" cx="59" cy="92" r="3" opacity="0.4"/>
+  <text class="tm" x="59" y="128" font-size="10" text-anchor="middle" textLength="18" lengthAdjust="spacingAndGlyphs">AP</text>
+
+  <!-- protected path with a TLS padlock -->
+  <path class="sacc flow" d="M84 92 h52" stroke-width="2.5" stroke-linecap="round"/>
+  <g transform="translate(150,92)">
+    <rect class="ok" x="-8" y="-2" width="16" height="12" rx="2"/>
+    <path class="oks" d="M-4.5 -2 v-3.5 a4.5 4.5 0 0 1 9 0 v3.5" fill="none" stroke-width="2"/>
+  </g>
+  <path class="sacc flow" d="M164 92 h34" stroke-width="2.5" stroke-linecap="round"/>
+  <text class="tm" x="150" y="122" font-size="9" text-anchor="middle" textLength="64" lengthAdjust="spacingAndGlyphs">TLS protected</text>
+
+  <!-- redundant AAA servers -->
+  <rect class="sacc" x="202" y="48" width="52" height="66" rx="7" stroke-width="2" opacity="0.45"/>
+  <rect class="sacc" style="fill:var(--soft,#e8f4fb)" x="212" y="62" width="52" height="66" rx="7" stroke-width="2.5"/>
+  <path class="sacc" d="M212 84 h52 M212 106 h52" stroke-width="1.6" opacity="0.45"/>
+  <circle class="ok" cx="222" cy="73" r="2.2"/>
+  <circle class="acc" cx="222" cy="95" r="2.2" opacity="0.4"/>
+  <circle class="acc" cx="222" cy="117" r="2.2" opacity="0.4"/>
+  <text class="tm" x="238" y="148" font-size="9" text-anchor="middle" textLength="76" lengthAdjust="spacingAndGlyphs">Redundant AAA</text>
+</svg>

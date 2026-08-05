@@ -10,7 +10,7 @@
     .id-detail .bg{fill:var(--soft,#e8faf1)} .id-detail .acc{fill:var(--acc,#1aad55)}
     .id-detail .sacc{fill:none;stroke:var(--acc,#1aad55)} .id-detail .ink{fill:#14211f}
     .id-detail .tl{fill:var(--acc,#1aad55);font-weight:820} .id-detail .tm{fill:#60706d;font-weight:700}
-    .id-detail .mono{fill:#60706d;font-weight:600}
+    .id-detail .val{fill:#60706d;font-weight:600}
     .id-detail .step{opacity:0;transition:opacity .35s ease} .id-detail .title{opacity:0}
     .id-detail .row{opacity:.5;transition:opacity .35s}
     .id-detail[data-step="1"] .s1, .id-detail[data-step="1"] .t1, .id-detail[data-step="1"] .r1,
@@ -28,7 +28,7 @@
   <!-- device asking -->
   <rect fill="#fff" class="sacc" x="40" y="96" width="64" height="128" rx="15" stroke-width="2.5"/>
   <rect class="bg" x="48" y="110" width="48" height="100" rx="4"/>
-  <text class="tm" x="46" y="244" font-size="12" textLength="52" lengthAdjust="spacingAndGlyphs">Device</text>
+  <text class="tm" x="72" y="244" font-size="12" text-anchor="middle" textLength="52" lengthAdjust="spacingAndGlyphs">Device</text>
 
   <!-- ANQP card -->
   <rect fill="#fff" class="sacc" x="150" y="52" width="332" height="196" rx="10" stroke-width="2.5"/>
@@ -38,19 +38,19 @@
   <!-- rows: label + example value -->
   <g class="row r1">
     <text class="ink" x="166" y="116" font-size="13" font-weight="760" textLength="74" lengthAdjust="spacingAndGlyphs">Domain</text>
-    <text class="mono" x="300" y="116" font-size="12" textLength="160" lengthAdjust="spacingAndGlyphs">wba.example.com</text>
+    <text class="val" x="300" y="116" font-size="12" textLength="112" lengthAdjust="spacingAndGlyphs">wba.example.com</text>
   </g>
   <g class="row r2">
     <text class="ink" x="166" y="152" font-size="13" font-weight="760" textLength="86" lengthAdjust="spacingAndGlyphs">NAI realm</text>
-    <text class="mono" x="300" y="152" font-size="12" textLength="120" lengthAdjust="spacingAndGlyphs">user@isp.example</text>
+    <text class="val" x="300" y="152" font-size="12" textLength="112" lengthAdjust="spacingAndGlyphs">user@isp.example</text>
   </g>
   <g class="row r3">
     <text class="ink" x="166" y="188" font-size="13" font-weight="760" textLength="44" lengthAdjust="spacingAndGlyphs">RCOI</text>
-    <text class="mono" x="300" y="188" font-size="12" textLength="170" lengthAdjust="spacingAndGlyphs">5A 03 BA · OpenRoaming</text>
+    <text class="val" x="300" y="188" font-size="12" textLength="132" lengthAdjust="spacingAndGlyphs">5A 03 BA · OpenRoaming</text>
   </g>
   <g class="row r4">
     <text class="ink" x="166" y="224" font-size="13" font-weight="760" textLength="50" lengthAdjust="spacingAndGlyphs">PLMN</text>
-    <text class="mono" x="300" y="224" font-size="12" textLength="92" lengthAdjust="spacingAndGlyphs">310 / 410</text>
+    <text class="val" x="300" y="224" font-size="12" textLength="64" lengthAdjust="spacingAndGlyphs">310 / 410</text>
   </g>
 
   <!-- per-step highlight + check -->

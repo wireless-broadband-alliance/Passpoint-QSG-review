@@ -6,11 +6,11 @@
      data-cap-3="Tapping a name that has not matched brings up manual prompts: username and password on iOS, full network settings with EAP details on Android.">
   <style>
     .cli-detail text { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
-    .cli-detail .bg{fill:var(--soft,#fffbeb)} .cli-detail .acc{fill:var(--acc,#0b74b1)}
-    .cli-detail .sacc{fill:none;stroke:var(--acc,#0b74b1)} .cli-detail .soft{fill:var(--soft,#fffbeb)}
-    .cli-detail .ink{fill:#14211f} .cli-detail .ok{fill:#1aad55} .cli-detail .bad{fill:#d64545}
-    .cli-detail .sbad{fill:none;stroke:#d64545}
-    .cli-detail .tl{fill:var(--acc,#0b74b1);font-weight:820} .cli-detail .tm{fill:#60706d;font-weight:700}
+    .cli-detail .bg{fill:var(--soft,#fffbeb)} .cli-detail .acc{fill:var(--acc,#d97706)}
+    .cli-detail .sacc{fill:none;stroke:var(--acc,#d97706)} .cli-detail .soft{fill:var(--soft,#fffbeb)}
+    .cli-detail .ink{fill:#14211f} .cli-detail .ok{fill:#1aad55} .cli-detail .bad{fill:#e53e3e}
+    .cli-detail .sbad{fill:none;stroke:#e53e3e}
+    .cli-detail .tl{fill:var(--acc,#d97706);font-weight:820} .cli-detail .tm{fill:#60706d;font-weight:700}
     .cli-detail .step{opacity:0;transition:opacity .35s ease} .cli-detail .title{opacity:0}
     .cli-detail[data-step="1"] .s1, .cli-detail[data-step="1"] .t1,
     .cli-detail[data-step="2"] .s2, .cli-detail[data-step="2"] .t2,
@@ -24,7 +24,7 @@
 
   <!-- persistent: Android phone -->
   <rect fill="#fff" class="sacc" x="66" y="72" width="128" height="176" rx="15" stroke-width="2.5"/>
-  <text class="tm" x="100" y="266" font-size="12" textLength="52" lengthAdjust="spacingAndGlyphs">Android</text>
+  <text class="tm" x="130" y="266" font-size="12" text-anchor="middle" textLength="52" lengthAdjust="spacingAndGlyphs">Android</text>
   <rect class="soft" x="78" y="90" width="104" height="24" rx="5"/>
   <text class="tm" x="86" y="106" font-size="10" textLength="64" lengthAdjust="spacingAndGlyphs">Coffee-Guest</text>
   <rect fill="#fff" class="sacc" x="78" y="122" width="104" height="28" rx="5" stroke-width="2"/>
@@ -34,7 +34,7 @@
 
   <!-- persistent: iOS phone -->
   <rect fill="#fff" class="sacc" x="326" y="72" width="128" height="176" rx="15" stroke-width="2.5"/>
-  <text class="tm" x="378" y="266" font-size="12" textLength="24" lengthAdjust="spacingAndGlyphs">iOS</text>
+  <text class="tm" x="390" y="266" font-size="12" text-anchor="middle" textLength="24" lengthAdjust="spacingAndGlyphs">iOS</text>
   <rect class="soft" x="338" y="90" width="104" height="24" rx="5"/>
   <text class="tm" x="346" y="106" font-size="10" textLength="64" lengthAdjust="spacingAndGlyphs">Coffee-Guest</text>
   <rect fill="#fff" class="sacc" x="338" y="122" width="104" height="36" rx="5" stroke-width="2"/>
@@ -47,10 +47,10 @@
   <g class="step s1">
     <path class="sacc" d="M198 136 h34" stroke-width="1.6" stroke-dasharray="3 3"/>
     <path class="sacc" d="M322 140 h-34" stroke-width="1.6" stroke-dasharray="3 3"/>
-    <text class="ink" x="212" y="118" font-size="11" textLength="96" lengthAdjust="spacingAndGlyphs">Profile name,</text>
-    <text class="tm" x="206" y="132" font-size="10" textLength="108" lengthAdjust="spacingAndGlyphs">shown like an SSID</text>
-    <text class="tm" x="206" y="158" font-size="10" textLength="108" lengthAdjust="spacingAndGlyphs">shown under the real</text>
-    <text class="tm" x="238" y="171" font-size="10" textLength="26" lengthAdjust="spacingAndGlyphs">SSID</text>
+    <text class="ink" x="260" y="118" font-size="11" text-anchor="middle" textLength="90" lengthAdjust="spacingAndGlyphs">Profile name,</text>
+    <text class="tm" x="260" y="132" font-size="10" text-anchor="middle" textLength="108" lengthAdjust="spacingAndGlyphs">shown like an SSID</text>
+    <text class="tm" x="260" y="158" font-size="10" text-anchor="middle" textLength="112" lengthAdjust="spacingAndGlyphs">shown under the real</text>
+    <text class="tm" x="260" y="171" font-size="10" text-anchor="middle" textLength="26" lengthAdjust="spacingAndGlyphs">SSID</text>
   </g>
 
   <!-- STEP 2: matched, auto-join -->
@@ -63,8 +63,8 @@
       <circle class="ok" cx="0" cy="0" r="13"/>
       <path d="M-5.5 0 l4 4 7.5 -8.5" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
-    <text class="ink" x="222" y="196" font-size="11" textLength="76" lengthAdjust="spacingAndGlyphs">Auto-joined,</text>
-    <text class="tm" x="216" y="210" font-size="10" textLength="88" lengthAdjust="spacingAndGlyphs">no tap required</text>
+    <text class="ink" x="260" y="196" font-size="11" text-anchor="middle" textLength="76" lengthAdjust="spacingAndGlyphs">Auto-joined,</text>
+    <text class="tm" x="260" y="210" font-size="10" text-anchor="middle" textLength="88" lengthAdjust="spacingAndGlyphs">no tap required</text>
   </g>
 
   <!-- STEP 3: tapped without a match -> credential prompts -->
@@ -76,7 +76,7 @@
     <rect fill="#fff" class="sbad" x="200" y="150" width="120" height="40" rx="7" stroke-width="2"/>
     <text class="bad" x="210" y="168" font-size="10" textLength="98" lengthAdjust="spacingAndGlyphs">iOS: username and</text>
     <text class="bad" x="210" y="181" font-size="10" textLength="86" lengthAdjust="spacingAndGlyphs">password prompt</text>
-    <text class="tm" x="204" y="212" font-size="10" textLength="112" lengthAdjust="spacingAndGlyphs">The prompt is the symptom:</text>
-    <text class="tm" x="204" y="225" font-size="10" textLength="110" lengthAdjust="spacingAndGlyphs">the profile did not match</text>
+    <text class="tm" x="260" y="212" font-size="10" text-anchor="middle" textLength="128" lengthAdjust="spacingAndGlyphs">The prompt is the symptom:</text>
+    <text class="tm" x="260" y="225" font-size="10" text-anchor="middle" textLength="118" lengthAdjust="spacingAndGlyphs">the profile did not match</text>
   </g>
 </svg>

@@ -23,9 +23,9 @@
   <text class="tl title t3" x="28" y="40" font-size="17" textLength="230" lengthAdjust="spacingAndGlyphs">3 · R3 Venue + WPA3</text>
 
   <!-- rising release cards -->
-  <g class="card c1"><rect fill="#fff" class="sacc" x="40" y="170" width="92" height="70" rx="8" stroke-width="2.5"/><text class="ta" x="70" y="212" font-size="22">R1</text></g>
-  <g class="card c2"><rect fill="#fff" class="sacc" x="140" y="130" width="92" height="110" rx="8" stroke-width="2.5"/><text class="ta" x="170" y="190" font-size="22">R2</text></g>
-  <g class="card c3"><rect fill="#fff" class="sacc" x="240" y="86" width="92" height="154" rx="8" stroke-width="2.5"/><text class="ta" x="270" y="150" font-size="22">R3</text></g>
+  <g class="card c1"><rect fill="#fff" class="sacc" x="40" y="170" width="92" height="70" rx="8" stroke-width="2.5"/><text class="ta" x="86" y="212" font-size="22" text-anchor="middle">R1</text></g>
+  <g class="card c2"><rect fill="#fff" class="sacc" x="140" y="130" width="92" height="110" rx="8" stroke-width="2.5"/><text class="ta" x="186" y="190" font-size="22" text-anchor="middle">R2</text></g>
+  <g class="card c3"><rect fill="#fff" class="sacc" x="240" y="86" width="92" height="154" rx="8" stroke-width="2.5"/><text class="ta" x="286" y="150" font-size="22" text-anchor="middle">R3</text></g>
 
   <!-- description panel -->
   <rect fill="#fff" class="sacc" x="350" y="86" width="142" height="154" rx="10" stroke-width="2"/>
@@ -33,22 +33,22 @@
   <!-- R1 description -->
   <g class="step s1">
     <text class="tl" x="364" y="112" font-size="12" textLength="84" lengthAdjust="spacingAndGlyphs">R1 · Core join</text>
-    <circle class="acc" cx="368" cy="132" r="3"/><text class="ink" x="378" y="136" font-size="11" textLength="100" lengthAdjust="spacingAndGlyphs">Discovery (ANQP)</text>
-    <circle class="acc" cx="368" cy="152" r="3"/><text class="ink" x="378" y="156" font-size="11" textLength="100" lengthAdjust="spacingAndGlyphs">Network selection</text>
-    <circle class="acc" cx="368" cy="172" r="3"/><text class="ink" x="378" y="176" font-size="11" textLength="104" lengthAdjust="spacingAndGlyphs">WPA2-Enterprise</text>
+    <circle class="acc" cx="368" cy="132" r="3"/><text class="ink" x="378" y="136" font-size="11" textLength="98" lengthAdjust="spacingAndGlyphs">Discovery (ANQP)</text>
+    <circle class="acc" cx="368" cy="152" r="3"/><text class="ink" x="378" y="156" font-size="11" textLength="104" lengthAdjust="spacingAndGlyphs">Network selection</text>
+    <circle class="acc" cx="368" cy="172" r="3"/><text class="ink" x="378" y="176" font-size="11" textLength="92" lengthAdjust="spacingAndGlyphs">WPA2-Enterprise</text>
   </g>
   <!-- R2 description -->
   <g class="step s2">
-    <text class="tl" x="364" y="112" font-size="12" textLength="92" lengthAdjust="spacingAndGlyphs">R2 · Sign-up</text>
-    <circle class="acc" cx="368" cy="132" r="3"/><text class="ink" x="378" y="136" font-size="11" textLength="108" lengthAdjust="spacingAndGlyphs">Online Sign-Up</text>
-    <circle class="acc" cx="368" cy="152" r="3"/><text class="ink" x="378" y="156" font-size="11" textLength="108" lengthAdjust="spacingAndGlyphs">Profile provision</text>
-    <circle class="acc" cx="368" cy="172" r="3"/><text class="ink" x="378" y="176" font-size="11" textLength="100" lengthAdjust="spacingAndGlyphs">Subscription update</text>
+    <text class="tl" x="364" y="112" font-size="12" textLength="78" lengthAdjust="spacingAndGlyphs">R2 · Sign-up</text>
+    <circle class="acc" cx="368" cy="132" r="3"/><text class="ink" x="378" y="136" font-size="11" textLength="86" lengthAdjust="spacingAndGlyphs">Online Sign-Up</text>
+    <circle class="acc" cx="368" cy="152" r="3"/><text class="ink" x="378" y="156" font-size="11" textLength="100" lengthAdjust="spacingAndGlyphs">Profile provision</text>
+    <circle class="acc" cx="368" cy="172" r="3"/><text class="ink" x="378" y="176" font-size="11" textLength="112" lengthAdjust="spacingAndGlyphs">Subscription update</text>
   </g>
   <!-- R3 description -->
   <g class="step s3">
     <text class="tl" x="364" y="112" font-size="12" textLength="116" lengthAdjust="spacingAndGlyphs">R3 · Venue + WPA3</text>
-    <circle class="acc" cx="368" cy="132" r="3"/><text class="ink" x="378" y="136" font-size="11" textLength="92" lengthAdjust="spacingAndGlyphs">Venue / operator</text>
+    <circle class="acc" cx="368" cy="132" r="3"/><text class="ink" x="378" y="136" font-size="11" textLength="96" lengthAdjust="spacingAndGlyphs">Venue / operator</text>
     <circle class="acc" cx="368" cy="152" r="3"/><text class="ink" x="378" y="156" font-size="11" textLength="108" lengthAdjust="spacingAndGlyphs">Terms &amp; conditions</text>
-    <circle class="acc" cx="368" cy="172" r="3"/><text class="ink" x="378" y="176" font-size="11" textLength="96" lengthAdjust="spacingAndGlyphs">WPA3 / PMF</text>
+    <circle class="acc" cx="368" cy="172" r="3"/><text class="ink" x="378" y="176" font-size="11" textLength="64" lengthAdjust="spacingAndGlyphs">WPA3 / PMF</text>
   </g>
 </svg>

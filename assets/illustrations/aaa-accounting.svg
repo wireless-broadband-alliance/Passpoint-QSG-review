@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 178" role="img"
+     aria-label="Session records - start, interim, stop - plus location for each session">
+  <style>
+    svg { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+    .bg{fill:var(--soft,#e8f4fb)} .acc{fill:var(--acc,#085d8e)}
+    .sacc{fill:none;stroke:var(--acc,#085d8e)} .ok{fill:#1aad55}
+    .ink{fill:#14211f} text{font-weight:760}
+    .t{fill:#14211f} .ta{fill:var(--acc,#085d8e);font-weight:820} .tm{fill:#60706d;font-weight:700}
+    .rec{opacity:0}
+    @keyframes aaac-r1{0%,10%{opacity:0}20%,92%{opacity:1}100%{opacity:0}}
+    @keyframes aaac-r2{0%,30%{opacity:0}40%,92%{opacity:1}100%{opacity:0}}
+    @keyframes aaac-r3{0%,50%{opacity:0}60%,92%{opacity:1}100%{opacity:0}}
+    .k1{animation:aaac-r1 4.2s ease-in-out infinite}
+    .k2{animation:aaac-r2 4.2s ease-in-out infinite}
+    .k3{animation:aaac-r3 4.2s ease-in-out infinite}
+    @media (prefers-reduced-motion: reduce){.rec{animation:none;opacity:1}}
+  </style>
+
+  <rect class="bg" width="280" height="178"/>
+  <ellipse class="ink" cx="124" cy="158" rx="80" ry="6" opacity="0.05"/>
+
+  <!-- session record card -->
+  <rect class="sacc" style="fill:var(--soft,#e8f4fb)" x="48" y="34" width="152" height="110" rx="8" stroke-width="2.5"/>
+  <text class="ta" x="64" y="58" font-size="11" textLength="96" lengthAdjust="spacingAndGlyphs">Session records</text>
+  <path class="sacc" d="M64 66 h120" stroke-width="1.6" opacity="0.3"/>
+
+  <circle class="sacc" cx="72" cy="84" r="5" stroke-width="1.6" opacity="0.35"/>
+  <circle class="sacc" cx="72" cy="106" r="5" stroke-width="1.6" opacity="0.35"/>
+  <circle class="sacc" cx="72" cy="128" r="5" stroke-width="1.6" opacity="0.35"/>
+  <g class="rec k1"><circle class="ok" cx="72" cy="84" r="5"/></g>
+  <g class="rec k2"><circle class="ok" cx="72" cy="106" r="5"/></g>
+  <g class="rec k3"><circle class="ok" cx="72" cy="128" r="5"/></g>
+  <text class="t" x="86" y="88"  font-size="10" textLength="28" lengthAdjust="spacingAndGlyphs">Start</text>
+  <text class="t" x="86" y="110" font-size="10" textLength="42" lengthAdjust="spacingAndGlyphs">Interim</text>
+  <text class="t" x="86" y="132" font-size="10" textLength="28" lengthAdjust="spacingAndGlyphs">Stop</text>
+  <rect class="acc" x="140" y="79" width="44" height="4" rx="2" opacity="0.2"/>
+  <rect class="acc" x="140" y="101" width="36" height="4" rx="2" opacity="0.2"/>
+  <rect class="acc" x="140" y="123" width="40" height="4" rx="2" opacity="0.2"/>
+
+  <!-- location pin -->
+  <ellipse class="ink" cx="234" cy="120" rx="16" ry="4" opacity="0.08"/>
+  <path class="acc" d="M234 62 c-13 0 -22 10 -22 22 0 16 22 34 22 34 s22 -18 22 -34 c0 -12 -9 -22 -22 -22 z"/>
+  <circle fill="#fff" cx="234" cy="85" r="7"/>
+  <text class="tm" x="234" y="142" font-size="9" text-anchor="middle" textLength="48" lengthAdjust="spacingAndGlyphs">Location</text>
+</svg>

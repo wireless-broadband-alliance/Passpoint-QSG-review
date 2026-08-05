@@ -31,29 +31,29 @@
   <!-- device -->
   <rect fill="#fff" class="sacc" x="44" y="108" width="68" height="124" rx="15" stroke-width="2.5"/>
   <rect class="bg" x="52" y="122" width="52" height="96" rx="4"/>
-  <text class="tm" x="50" y="252" font-size="12" textLength="60" lengthAdjust="spacingAndGlyphs">Device</text>
+  <text class="tm" x="78" y="252" font-size="12" text-anchor="middle" textLength="60" lengthAdjust="spacingAndGlyphs">Device</text>
 
   <!-- access point / NAS -->
   <line class="sacc" x1="212" y1="120" x2="206" y2="98" stroke-width="2.5" stroke-linecap="round"/>
   <line class="sacc" x1="248" y1="120" x2="254" y2="98" stroke-width="2.5" stroke-linecap="round"/>
   <rect fill="#fff" class="sacc" x="190" y="120" width="80" height="46" rx="8" stroke-width="2.5"/>
   <circle class="acc" cx="230" cy="143" r="3.4" opacity="0.4"/>
-  <text class="tm" x="190" y="252" font-size="12" textLength="98" lengthAdjust="spacingAndGlyphs">Access point (NAS)</text>
+  <text class="tm" x="230" y="252" font-size="12" text-anchor="middle" textLength="110" lengthAdjust="spacingAndGlyphs">Access point (NAS)</text>
 
   <!-- AAA + IdP server -->
   <rect fill="#fff" class="sacc" x="356" y="110" width="84" height="100" rx="8" stroke-width="2.5"/>
-  <path class="sacc" d="M356 140 h84 M356 170 h84" stroke-width="1.5" opacity="0.4"/>
+  <path class="sacc" d="M356 140 h84 M356 170 h84" stroke-width="1.6" opacity="0.4"/>
   <circle class="acc" cx="370" cy="125" r="2.8"/>
   <circle class="acc" cx="370" cy="155" r="2.8" opacity="0.4"/>
   <circle class="acc" cx="370" cy="185" r="2.8" opacity="0.4"/>
-  <text class="tm" x="360" y="252" font-size="12" textLength="92" lengthAdjust="spacingAndGlyphs">AAA + IdP server</text>
+  <text class="tm" x="398" y="252" font-size="12" text-anchor="middle" textLength="92" lengthAdjust="spacingAndGlyphs">AAA + IdP server</text>
 
   <!-- RadSec lock on the off-network wire -->
   <g transform="translate(313,170)">
     <rect class="ok" x="-9" y="-2" width="18" height="14" rx="2.5"/>
     <path class="oks" d="M-5 -2 v-4 a5 5 0 0 1 10 0 v4" stroke-width="2"/>
   </g>
-  <text class="tm" x="290" y="200" font-size="11" textLength="46" lengthAdjust="spacingAndGlyphs">RadSec</text>
+  <text class="tm" x="313" y="200" font-size="11" text-anchor="middle" textLength="46" lengthAdjust="spacingAndGlyphs">RadSec</text>
 
   <!-- STEP 1: authentication -->
   <g class="step s1">
@@ -64,21 +64,22 @@
     <g transform="translate(420,128)"><circle class="ok" cx="0" cy="0" r="11"/><path d="M-5 0 l4 4 7 -8" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g>
   </g>
 
-  <!-- STEP 2: authorization -->
+  <!-- STEP 2: authorization; the info panel shares one stable top-right slot with step 3 -->
   <g class="step s2">
-    <line class="sacc flowline" x1="356" y1="178" x2="112" y2="178" stroke-width="3"/>
-    <rect fill="#fff" class="sacc" x="150" y="70" width="170" height="64" rx="8" stroke-width="2"/>
-    <text class="tl" x="162" y="90" font-size="11" textLength="86" lengthAdjust="spacingAndGlyphs">Session policy</text>
-    <circle class="ok" cx="166" cy="105" r="3"/><text class="ink" x="176" y="109" font-size="11" textLength="92" lengthAdjust="spacingAndGlyphs">Network + VLAN</text>
-    <circle class="ok" cx="166" cy="121" r="3"/><text class="ink" x="176" y="125" font-size="11" textLength="104" lengthAdjust="spacingAndGlyphs">Quality of service</text>
+    <line class="sacc flowline" x1="356" y1="178" x2="120" y2="178" stroke-width="3"/>
+    <path class="sacc" d="M127 174 l-8 4 8 4" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect class="sacc" style="fill:var(--soft,#e8f4fb)" x="322" y="36" width="166" height="70" rx="8" stroke-width="2"/>
+    <text class="tl" x="334" y="56" font-size="11" textLength="86" lengthAdjust="spacingAndGlyphs">Session policy</text>
+    <circle class="ok" cx="338" cy="72" r="3"/><text class="ink" x="348" y="76" font-size="11" textLength="92" lengthAdjust="spacingAndGlyphs">Network + VLAN</text>
+    <circle class="ok" cx="338" cy="88" r="3"/><text class="ink" x="348" y="92" font-size="11" textLength="104" lengthAdjust="spacingAndGlyphs">Quality of service</text>
   </g>
 
   <!-- STEP 3: accounting -->
   <g class="step s3">
-    <rect fill="#fff" class="sacc" x="318" y="64" width="150" height="74" rx="8" stroke-width="2"/>
-    <text class="tl" x="330" y="83" font-size="11" textLength="104" lengthAdjust="spacingAndGlyphs">Session records</text>
-    <circle class="ok" cx="334" cy="99" r="3"/><text class="ink" x="344" y="103" font-size="11" textLength="40" lengthAdjust="spacingAndGlyphs">Start</text>
-    <circle class="ok" cx="334" cy="115" r="3"/><text class="ink" x="344" y="119" font-size="11" textLength="54" lengthAdjust="spacingAndGlyphs">Interim</text>
-    <circle class="ok" cx="334" cy="131" r="3"/><text class="ink" x="344" y="135" font-size="11" textLength="38" lengthAdjust="spacingAndGlyphs">Stop</text>
+    <rect class="sacc" style="fill:var(--soft,#e8f4fb)" x="322" y="36" width="166" height="70" rx="8" stroke-width="2"/>
+    <text class="tl" x="334" y="54" font-size="11" textLength="104" lengthAdjust="spacingAndGlyphs">Session records</text>
+    <circle class="ok" cx="338" cy="68" r="3"/><text class="ink" x="348" y="72" font-size="11" textLength="34" lengthAdjust="spacingAndGlyphs">Start</text>
+    <circle class="ok" cx="338" cy="83" r="3"/><text class="ink" x="348" y="87" font-size="11" textLength="50" lengthAdjust="spacingAndGlyphs">Interim</text>
+    <circle class="ok" cx="338" cy="98" r="3"/><text class="ink" x="348" y="102" font-size="11" textLength="34" lengthAdjust="spacingAndGlyphs">Stop</text>
   </g>
 </svg>
