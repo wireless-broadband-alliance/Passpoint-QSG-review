@@ -1,9 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" role="img"
-     class="dep-detail" data-steps="3" data-step="1"
-     aria-label="Deployment: pick the use case, choose the feature set, then launch and operate"
-     data-cap-1="Start with a clear use case - enterprise onboarding, carrier offload, venue roaming, or OpenRoaming - because it drives every later choice."
-     data-cap-2="Choose the smallest complete set of features that delivers automatic, secure, supportable service for that use case - nothing more."
-     data-cap-3="Launch and operate it: standardised accounting and session attributes, monitoring, and a clear owner for profile updates and support.">
+     class="dep-detail" data-steps="4" data-step="1"
+     aria-label="Four connection models side by side: captive portal or WISPr, 802.1X with SSID matching, Passpoint, and OpenRoaming"
+     data-cap-1="Captive portal / WISPr: the SSID is open and a web page sits in the join path - the user, or a helper app, signs in each visit."
+     data-cap-2="802.1X (SSID matching): the credential moves into a profile and the link is secured, but network selection still matches the SSID name - roaming only works when partnered ANPs provision that SSID."
+     data-cap-3="Passpoint: the same 802.1X security plus ANQP discovery - selection no longer depends on the SSID, and joining is automatic once a profile is installed."
+     data-cap-4="OpenRoaming: a federation of providers on Passpoint - common RCOIs, a shared PKI with RadSec, and Dynamic Peer Discovery let one profile roam across many networks.">
   <style>
     .dep-detail text { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
     .dep-detail .bg{fill:var(--soft,#e8faf1)} .dep-detail .acc{fill:var(--acc,#1aad55)}
@@ -13,46 +14,84 @@
     .dep-detail .stage{opacity:.45;transition:opacity .35s}
     .dep-detail[data-step="1"] .s1, .dep-detail[data-step="1"] .t1, .dep-detail[data-step="1"] .g1,
     .dep-detail[data-step="2"] .s2, .dep-detail[data-step="2"] .t2, .dep-detail[data-step="2"] .g2,
-    .dep-detail[data-step="3"] .s3, .dep-detail[data-step="3"] .t3, .dep-detail[data-step="3"] .g3 { opacity: 1; }
+    .dep-detail[data-step="3"] .s3, .dep-detail[data-step="3"] .t3, .dep-detail[data-step="3"] .g3,
+    .dep-detail[data-step="4"] .s4, .dep-detail[data-step="4"] .t4, .dep-detail[data-step="4"] .g4 { opacity: 1; }
   </style>
 
   <rect class="bg" width="520" height="300"/>
-  <text class="tl title t1" x="28" y="40" font-size="17" textLength="220" lengthAdjust="spacingAndGlyphs">1 · Pick the use case</text>
-  <text class="tl title t2" x="28" y="40" font-size="17" textLength="210" lengthAdjust="spacingAndGlyphs">2 · Choose features</text>
-  <text class="tl title t3" x="28" y="40" font-size="17" textLength="220" lengthAdjust="spacingAndGlyphs">3 · Launch &amp; operate</text>
+  <text class="tl title t1" x="28" y="40" font-size="17" textLength="240" lengthAdjust="spacingAndGlyphs">1 · Captive portal / WISPr</text>
+  <text class="tl title t2" x="28" y="40" font-size="17" textLength="240" lengthAdjust="spacingAndGlyphs">2 · 802.1X (SSID matching)</text>
+  <text class="tl title t3" x="28" y="40" font-size="17" textLength="120" lengthAdjust="spacingAndGlyphs">3 · Passpoint</text>
+  <text class="tl title t4" x="28" y="40" font-size="17" textLength="150" lengthAdjust="spacingAndGlyphs">4 · OpenRoaming</text>
 
-  <path class="sacc" d="M178 160 h12 M186 155 l6 5 -6 5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path class="sacc" d="M330 160 h12 M338 155 l6 5 -6 5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path class="sacc" d="M136 138 l7 6 -7 6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path class="sacc" d="M256 138 l7 6 -7 6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path class="sacc" d="M376 138 l7 6 -7 6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- stage 1: use case (target) -->
+  <!-- stage 1: captive portal / WISPr (sign-in page, open lock) -->
   <g class="stage g1">
-    <rect fill="#fff" class="sacc" x="42" y="96" width="134" height="128" rx="10" stroke-width="2.2"/>
-    <circle class="sacc" cx="109" cy="150" r="26" stroke-width="2.5"/>
-    <circle class="sacc" cx="109" cy="150" r="15" stroke-width="2.5"/>
-    <circle class="acc" cx="109" cy="150" r="5"/>
-    <text class="ink" x="109" y="206" font-size="12" font-weight="800" text-anchor="middle" textLength="56" lengthAdjust="spacingAndGlyphs">Use case</text>
-  </g>
-  <!-- stage 2: features (checklist) -->
-  <g class="stage g2">
-    <rect fill="#fff" class="sacc" x="194" y="96" width="134" height="128" rx="10" stroke-width="2.2"/>
-    <rect class="acc" x="222" y="128" width="13" height="13" rx="3"/><path d="M225 134 l2 2 4 -5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect class="acc" x="222" y="150" width="13" height="13" rx="3"/><path d="M225 156 l2 2 4 -5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect fill="none" class="sacc" x="222" y="172" width="13" height="13" rx="3" stroke-width="1.6"/>
-    <rect class="acc" x="244" y="132" width="62" height="5" rx="2.5" opacity="0.18"/>
-    <rect class="acc" x="244" y="154" width="54" height="5" rx="2.5" opacity="0.18"/>
-    <rect class="acc" x="244" y="176" width="58" height="5" rx="2.5" opacity="0.18"/>
-    <text class="ink" x="261" y="206" font-size="12" font-weight="800" text-anchor="middle" textLength="74" lengthAdjust="spacingAndGlyphs">Feature set</text>
-  </g>
-  <!-- stage 3: launch & operate (gauge) -->
-  <g class="stage g3">
-    <rect fill="#fff" class="sacc" x="346" y="96" width="134" height="128" rx="10" stroke-width="2.2"/>
-    <path class="sacc" d="M388 168 a25 25 0 0 1 50 0" stroke-width="2.5"/>
-    <line class="sacc" x1="413" y1="168" x2="428" y2="150" stroke-width="3" stroke-linecap="round"/>
-    <circle class="acc" cx="413" cy="168" r="4"/>
-    <text class="ink" x="413" y="206" font-size="12" font-weight="800" text-anchor="middle" textLength="80" lengthAdjust="spacingAndGlyphs">Launch + run</text>
+    <rect fill="#fff" class="sacc" x="27" y="88" width="106" height="112" rx="10" stroke-width="2.2"/>
+    <rect class="sacc" x="52" y="100" width="56" height="42" rx="4" stroke-width="2"/>
+    <line class="sacc" x1="52" y1="110" x2="108" y2="110" stroke-width="2"/>
+    <circle class="acc" cx="58" cy="105" r="1.6"/>
+    <circle class="acc" cx="64" cy="105" r="1.6"/>
+    <rect class="acc" x="58" y="117" width="44" height="7" rx="2.5" opacity="0.18"/>
+    <rect class="acc" x="58" y="129" width="22" height="8" rx="2.5"/>
+    <path class="sacc" d="M75 158 v-4.5 a5 5 0 0 1 10 0" stroke-width="2"/>
+    <rect class="sacc" x="72" y="158" width="16" height="12" rx="2.5" stroke-width="2"/>
+    <text class="ink" x="80" y="190" font-size="12" font-weight="800" text-anchor="middle" textLength="84" lengthAdjust="spacingAndGlyphs">Captive portal</text>
   </g>
 
-  <g class="step s1"><rect class="sacc" x="42" y="96" width="134" height="128" rx="10" stroke-width="3"/></g>
-  <g class="step s2"><rect class="sacc" x="194" y="96" width="134" height="128" rx="10" stroke-width="3"/></g>
-  <g class="step s3"><rect class="sacc" x="346" y="96" width="134" height="128" rx="10" stroke-width="3"/></g>
+  <!-- stage 2: 802.1X picks by SSID name (network list, closed lock) -->
+  <g class="stage g2">
+    <rect fill="#fff" class="sacc" x="147" y="88" width="106" height="112" rx="10" stroke-width="2.2"/>
+    <rect class="acc" x="164" y="102" width="72" height="9" rx="3" opacity="0.15"/>
+    <rect class="sacc" x="164" y="117" width="72" height="15" rx="4" stroke-width="2"/>
+    <text class="tl" x="200" y="128.5" font-size="11" text-anchor="middle" textLength="62" lengthAdjust="spacingAndGlyphs">SSID name</text>
+    <rect class="acc" x="164" y="138" width="72" height="9" rx="3" opacity="0.15"/>
+    <path class="sacc" d="M195 158 v-4.5 a5 5 0 0 1 10 0 v4.5" stroke-width="2"/>
+    <rect class="sacc" x="192" y="158" width="16" height="12" rx="2.5" stroke-width="2"/>
+    <text class="ink" x="200" y="190" font-size="12" font-weight="800" text-anchor="middle" textLength="44" lengthAdjust="spacingAndGlyphs">802.1X</text>
+  </g>
+
+  <!-- stage 3: Passpoint asks via ANQP (phone, AP, question and answer) -->
+  <g class="stage g3">
+    <rect fill="#fff" class="sacc" x="267" y="88" width="106" height="112" rx="10" stroke-width="2.2"/>
+    <rect class="sacc" x="284" y="100" width="24" height="44" rx="5" stroke-width="2.2"/>
+    <path class="sacc" d="M341 108 a10 10 0 0 1 14 0" stroke-width="2"/>
+    <path class="sacc" d="M337 113 a16 16 0 0 1 22 0" stroke-width="2"/>
+    <circle class="acc" cx="348" cy="119" r="3.5"/>
+    <rect class="sacc" x="314" y="106" width="16" height="13" rx="3" stroke-width="1.6"/>
+    <text class="tl" x="322" y="116" font-size="11" text-anchor="middle">?</text>
+    <rect class="acc" x="314" y="126" width="16" height="13" rx="3"/>
+    <path d="M318 132.5 l2.6 2.6 5 -5.6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="sacc" d="M315 158 v-4.5 a5 5 0 0 1 10 0 v4.5" stroke-width="2"/>
+    <rect class="sacc" x="312" y="158" width="16" height="12" rx="2.5" stroke-width="2"/>
+    <text class="ink" x="320" y="190" font-size="12" font-weight="800" text-anchor="middle" textLength="62" lengthAdjust="spacingAndGlyphs">Passpoint</text>
+  </g>
+
+  <!-- stage 4: OpenRoaming federation (ring of networks, one profile) -->
+  <g class="stage g4">
+    <rect fill="#fff" class="sacc" x="387" y="88" width="106" height="112" rx="10" stroke-width="2.2"/>
+    <circle class="sacc" cx="440" cy="128" r="26" stroke-width="2" stroke-dasharray="4 3"/>
+    <circle class="acc" cx="440" cy="102" r="4"/>
+    <circle class="acc" cx="417.5" cy="141" r="4"/>
+    <circle class="acc" cx="462.5" cy="141" r="4"/>
+    <rect class="acc" x="432" y="120" width="16" height="16" rx="3.5"/>
+    <path d="M436 128 l3 3 5.5 -6.5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="sacc" d="M435 164 v-4.5 a5 5 0 0 1 10 0 v4.5" stroke-width="2"/>
+    <rect class="sacc" x="432" y="164" width="16" height="12" rx="2.5" stroke-width="2"/>
+    <text class="ink" x="440" y="190" font-size="12" font-weight="800" text-anchor="middle" textLength="78" lengthAdjust="spacingAndGlyphs">OpenRoaming</text>
+  </g>
+
+  <!-- selection annotation: SSID name vs ANQP -->
+  <path class="sacc" d="M27 212 v5 M27 217 h226 M253 217 v-5" stroke-width="2"/>
+  <text class="tm" x="140" y="236" font-size="12" text-anchor="middle" textLength="176" lengthAdjust="spacingAndGlyphs">Network selected by SSID name</text>
+  <path class="sacc" d="M267 212 v5 M267 217 h226 M493 217 v-5" stroke-width="2"/>
+  <text class="tm" x="380" y="236" font-size="12" text-anchor="middle" textLength="150" lengthAdjust="spacingAndGlyphs">Network selected by ANQP</text>
+
+  <g class="step s1"><rect class="sacc" x="27" y="88" width="106" height="112" rx="10" stroke-width="3"/></g>
+  <g class="step s2"><rect class="sacc" x="147" y="88" width="106" height="112" rx="10" stroke-width="3"/></g>
+  <g class="step s3"><rect class="sacc" x="267" y="88" width="106" height="112" rx="10" stroke-width="3"/></g>
+  <g class="step s4"><rect class="sacc" x="387" y="88" width="106" height="112" rx="10" stroke-width="3"/></g>
 </svg>

@@ -1,34 +1,74 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 178" role="img"
-     aria-label="A deployment checklist: use case, feature set, then launch and run">
+     aria-label="Four connection models: captive portal or WISPr, 802.1X with SSID matching, Passpoint, and OpenRoaming. Network selection moves from SSID name to ANQP.">
   <style>
     svg { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
     .bg{fill:var(--soft,#e8faf1)} .acc{fill:var(--acc,#1aad55)}
     .sacc{fill:none;stroke:var(--acc,#1aad55)} .ink{fill:#14211f}
     text{font-weight:760} .t{fill:#14211f} .ta{fill:var(--acc,#1aad55);font-weight:820}
-    .tick{opacity:0}
-    @keyframes dep-d1{0%,16%{opacity:0}26%,100%{opacity:1}}
-    @keyframes dep-d2{0%,38%{opacity:0}48%,100%{opacity:1}}
-    @keyframes dep-d3{0%,60%{opacity:0}70%,100%{opacity:1}}
-    .t1{animation:dep-d1 4.2s ease-in-out infinite}
-    .t2{animation:dep-d2 4.2s ease-in-out infinite}
-    .t3{animation:dep-d3 4.2s ease-in-out infinite}
-    @media (prefers-reduced-motion: reduce){.tick{animation:none;opacity:1}}
+    .hl{opacity:0}
+    @keyframes dep-h1{0%,4%{opacity:0}8%,22%{opacity:1}26%,100%{opacity:0}}
+    @keyframes dep-h2{0%,26%{opacity:0}30%,44%{opacity:1}48%,100%{opacity:0}}
+    @keyframes dep-h3{0%,48%{opacity:0}52%,66%{opacity:1}70%,100%{opacity:0}}
+    @keyframes dep-h4{0%,70%{opacity:0}74%,88%{opacity:1}92%,100%{opacity:0}}
+    .h1{animation:dep-h1 6s ease-in-out infinite}
+    .h2{animation:dep-h2 6s ease-in-out infinite}
+    .h3{animation:dep-h3 6s ease-in-out infinite}
+    .h4{animation:dep-h4 6s ease-in-out infinite}
+    @media (prefers-reduced-motion: reduce){.hl{animation:none;opacity:0}}
   </style>
 
   <rect class="bg" width="280" height="178"/>
-  <ellipse class="ink" cx="140" cy="158" rx="78" ry="6" opacity="0.05"/>
-  <rect class="sacc" style="fill:var(--soft,#e8faf1)" x="80" y="30" width="120" height="124" rx="10" stroke-width="2.5"/>
-  <rect class="sacc" style="fill:var(--soft,#e8faf1)" x="116" y="23" width="48" height="15" rx="5" stroke-width="2.5"/>
-  <text class="ta" x="92" y="58" font-size="11" textLength="96" lengthAdjust="spacingAndGlyphs">Launch checklist</text>
+  <ellipse class="ink" cx="140" cy="166" rx="90" ry="5" opacity="0.05"/>
+  <text class="ta" x="140" y="30" font-size="11" text-anchor="middle" textLength="108" lengthAdjust="spacingAndGlyphs">Connection models</text>
 
-  <rect class="sacc" x="92" y="72"  width="14" height="14" rx="3" stroke-width="2"/>
-  <rect class="sacc" x="92" y="100" width="14" height="14" rx="3" stroke-width="2"/>
-  <rect class="sacc" x="92" y="128" width="14" height="14" rx="3" stroke-width="2"/>
-  <text class="t" x="114" y="83"  font-size="9" textLength="42" lengthAdjust="spacingAndGlyphs">Use case</text>
-  <text class="t" x="114" y="111" font-size="9" textLength="54" lengthAdjust="spacingAndGlyphs">Feature set</text>
-  <text class="t" x="114" y="139" font-size="9" textLength="58" lengthAdjust="spacingAndGlyphs">Launch + run</text>
+  <!-- card 1: captive portal / WISPr (sign-in page, open lock) -->
+  <rect class="sacc" style="fill:var(--soft,#e8faf1)" x="16" y="54" width="56" height="64" rx="7" stroke-width="2"/>
+  <rect class="sacc" x="30" y="66" width="28" height="22" rx="2" stroke-width="1.6"/>
+  <line class="sacc" x1="30" y1="72" x2="58" y2="72" stroke-width="1.6"/>
+  <rect class="acc" x="34" y="76" width="20" height="3.5" rx="1.75" opacity="0.25"/>
+  <rect class="acc" x="34" y="82" width="12" height="4" rx="2"/>
+  <path class="sacc" d="M40 100 v-3 a4 4 0 0 1 8 0" stroke-width="1.6"/>
+  <rect class="sacc" x="38" y="100" width="12" height="9" rx="2" stroke-width="1.6"/>
+  <text class="t" x="44" y="132" font-size="8" text-anchor="middle" textLength="52" lengthAdjust="spacingAndGlyphs">Captive portal</text>
 
-  <g class="tick t1"><rect class="acc" x="92" y="72"  width="14" height="14" rx="3"/><path d="M95 79  l3 3 5 -6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
-  <g class="tick t2"><rect class="acc" x="92" y="100" width="14" height="14" rx="3"/><path d="M95 107 l3 3 5 -6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
-  <g class="tick t3"><rect class="acc" x="92" y="128" width="14" height="14" rx="3"/><path d="M95 135 l3 3 5 -6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <!-- card 2: 802.1X (SSID matching, closed lock) -->
+  <rect class="sacc" style="fill:var(--soft,#e8faf1)" x="80" y="54" width="56" height="64" rx="7" stroke-width="2"/>
+  <rect class="acc" x="93" y="63" width="30" height="4.5" rx="2.25" opacity="0.18"/>
+  <rect class="sacc" x="91" y="72" width="34" height="13" rx="4" stroke-width="1.6"/>
+  <text class="ta" x="108" y="81.5" font-size="8" text-anchor="middle" textLength="24" lengthAdjust="spacingAndGlyphs">SSID</text>
+  <rect class="acc" x="93" y="90" width="30" height="4.5" rx="2.25" opacity="0.18"/>
+  <path class="sacc" d="M104 106 v-3.5 a4 4 0 0 1 8 0 v3.5" stroke-width="1.6"/>
+  <rect class="sacc" x="102" y="106" width="12" height="9" rx="2" stroke-width="1.6"/>
+  <text class="t" x="108" y="132" font-size="8" text-anchor="middle" textLength="34" lengthAdjust="spacingAndGlyphs">802.1X</text>
+
+  <!-- card 3: Passpoint (phone asks, ANQP answers) -->
+  <rect class="sacc" style="fill:var(--soft,#e8faf1)" x="144" y="54" width="56" height="64" rx="7" stroke-width="2"/>
+  <rect class="sacc" x="154" y="66" width="13" height="24" rx="3" stroke-width="1.6"/>
+  <path class="sacc" d="M180 74 a8 8 0 0 1 12 0" stroke-width="1.6"/>
+  <path class="sacc" d="M177 79 a12 12 0 0 1 18 0" stroke-width="1.6"/>
+  <circle class="acc" cx="186" cy="84" r="3"/>
+  <g class="acc"><circle cx="172" cy="102" r="6.5"/><path d="M169 102 l2.2 2.2 4 -4.6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text class="t" x="172" y="132" font-size="8" text-anchor="middle" textLength="44" lengthAdjust="spacingAndGlyphs">Passpoint</text>
+
+  <!-- card 4: OpenRoaming (federation ring) -->
+  <rect class="sacc" style="fill:var(--soft,#e8faf1)" x="208" y="54" width="56" height="64" rx="7" stroke-width="2"/>
+  <circle class="sacc" cx="236" cy="86" r="16" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <circle class="acc" cx="236" cy="70" r="3.5"/>
+  <circle class="acc" cx="222" cy="94" r="3.5"/>
+  <circle class="acc" cx="250" cy="94" r="3.5"/>
+  <rect class="acc" x="231" y="81" width="10" height="10" rx="2.5"/>
+  <path d="M233.5 86 l2 2 3.5 -4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="t" x="236" y="132" font-size="8" text-anchor="middle" textLength="52" lengthAdjust="spacingAndGlyphs">OpenRoaming</text>
+
+  <!-- selection brackets: SSID name vs ANQP -->
+  <path class="sacc" d="M16 140 v4 M16 144 h120 M136 144 v-4" stroke-width="1.6"/>
+  <text class="ta" x="76" y="158" font-size="9" text-anchor="middle" textLength="72" lengthAdjust="spacingAndGlyphs">By SSID name</text>
+  <path class="sacc" d="M144 140 v4 M144 144 h120 M264 144 v-4" stroke-width="1.6"/>
+  <text class="ta" x="204" y="158" font-size="9" text-anchor="middle" textLength="48" lengthAdjust="spacingAndGlyphs">By ANQP</text>
+
+  <!-- roaming highlight cycles across the four models (decorative) -->
+  <rect class="hl h1" x="16" y="54" width="56" height="64" rx="7" fill="none" stroke="var(--acc,#1aad55)" stroke-width="3"/>
+  <rect class="hl h2" x="80" y="54" width="56" height="64" rx="7" fill="none" stroke="var(--acc,#1aad55)" stroke-width="3"/>
+  <rect class="hl h3" x="144" y="54" width="56" height="64" rx="7" fill="none" stroke="var(--acc,#1aad55)" stroke-width="3"/>
+  <rect class="hl h4" x="208" y="54" width="56" height="64" rx="7" fill="none" stroke="var(--acc,#1aad55)" stroke-width="3"/>
 </svg>
