@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 178" role="img"
-     aria-label="Passpoint releases R1, R2 and R3 building on each other">
+     aria-label="Passpoint releases R1, R2 (now deprecated) and R3 building on each other">
   <style>
     svg { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
     .bg{fill:var(--soft,#ede9fe)} .sacc{fill:none;stroke:var(--acc,#5b21b6)}
@@ -22,7 +22,7 @@
   <ellipse class="ink" cx="140" cy="152" rx="112" ry="6" opacity="0.05"/>
 
   <rect fill="#fff" class="sacc" x="30"  y="100" width="64" height="44" rx="8" stroke-width="2.5"/>
-  <rect fill="#fff" class="sacc" x="108" y="74"  width="64" height="70" rx="8" stroke-width="2.5"/>
+  <rect fill="#fff" class="sacc" x="108" y="74"  width="64" height="70" rx="8" stroke-width="2.5" stroke-dasharray="6 4"/>
   <rect fill="#fff" class="sacc" x="186" y="46"  width="64" height="98" rx="8" stroke-width="2.5"/>
 
   <text class="ta" x="62"  y="126" font-size="19" text-anchor="middle">R1</text>
