@@ -2,8 +2,8 @@
      class="rel-detail" data-steps="3" data-step="1"
      aria-label="What each Passpoint release added: R1, R2 (now deprecated) and R3"
      data-cap-1="Release 1 was the foundation: pre-association discovery and network selection, based on WPA2-Enterprise security."
-     data-cap-2="Release 2 introduced Online Sign-Up (OSU) and subscription remediation. These were later deprecated due to adoption barriers."
-     data-cap-3="Release 3 added richer venue and operator information, native terms and conditions, the Roaming Consortium Selection element, and stronger WPA3-Enterprise / PMF security.">
+     data-cap-2="Release 2 introduced Online Sign-Up (OSU) and subscription remediation, which were later deprecated due to adoption barriers. R2 also made Protected Management Frames (PMF) a requirement."
+     data-cap-3="Release 3 added richer venue and operator information, native terms and conditions, the Roaming Consortium Selection element, and stronger WPA3-Enterprise security.">
   <style>
     .rel-detail text { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
     .rel-detail .bg{fill:var(--soft,#ede9fe)} .rel-detail .acc{fill:var(--acc,#5b21b6)}
@@ -19,7 +19,7 @@
 
   <rect class="bg" width="520" height="300"/>
   <text class="tl title t1" x="28" y="40" font-size="17" textLength="170" lengthAdjust="spacingAndGlyphs">1 · R1 Core</text>
-  <text class="tl title t2" x="28" y="40" font-size="17" textLength="318" lengthAdjust="spacingAndGlyphs">2 · R2 Sign-up · deprecated</text>
+  <text class="tl title t2" x="28" y="40" font-size="17" textLength="250" lengthAdjust="spacingAndGlyphs">2 · R2 Sign-up + PMF</text>
   <text class="tl title t3" x="28" y="40" font-size="17" textLength="230" lengthAdjust="spacingAndGlyphs">3 · R3 Venue + WPA3</text>
 
   <!-- rising release cards -->
@@ -39,19 +39,20 @@
   </g>
   <!-- R2 description -->
   <g class="step s2">
-    <text class="tl" x="364" y="112" font-size="12" textLength="78" lengthAdjust="spacingAndGlyphs">R2 · Sign-up</text>
+    <text class="tl" x="364" y="112" font-size="12" textLength="112" lengthAdjust="spacingAndGlyphs">R2 · Sign-up + PMF</text>
     <circle class="acc" cx="368" cy="132" r="3"/><text class="ink" x="378" y="136" font-size="11" textLength="86" lengthAdjust="spacingAndGlyphs">Online Sign-Up</text>
     <circle class="acc" cx="368" cy="152" r="3"/><text class="ink" x="378" y="156" font-size="11" textLength="72" lengthAdjust="spacingAndGlyphs">Subscription</text>
     <text class="ink" x="378" y="171" font-size="11" textLength="70" lengthAdjust="spacingAndGlyphs">remediation</text>
-    <text class="tm" x="364" y="200" font-size="11" textLength="112" lengthAdjust="spacingAndGlyphs">Now deprecated</text>
+    <text class="tm" x="364" y="193" font-size="11" textLength="116" lengthAdjust="spacingAndGlyphs">Both now deprecated</text>
+    <circle class="acc" cx="368" cy="214" r="3"/><text class="ink" x="378" y="218" font-size="11" textLength="76" lengthAdjust="spacingAndGlyphs">PMF required</text>
   </g>
   <!-- R3 description -->
   <g class="step s3">
     <text class="tl" x="364" y="112" font-size="12" textLength="116" lengthAdjust="spacingAndGlyphs">R3 · Venue + WPA3</text>
     <circle class="acc" cx="368" cy="132" r="3"/><text class="ink" x="378" y="136" font-size="11" textLength="96" lengthAdjust="spacingAndGlyphs">Venue / operator</text>
-    <circle class="acc" cx="368" cy="152" r="3"/><text class="ink" x="378" y="156" font-size="11" textLength="108" lengthAdjust="spacingAndGlyphs">Terms &amp; conditions</text>
+    <circle class="acc" cx="368" cy="152" r="3"/><text class="ink" x="378" y="156" font-size="11" textLength="100" lengthAdjust="spacingAndGlyphs">Terms and conditions</text>
     <circle class="acc" cx="368" cy="172" r="3"/><text class="ink" x="378" y="176" font-size="11" textLength="104" lengthAdjust="spacingAndGlyphs">Roaming Consortium</text>
     <text class="ink" x="378" y="191" font-size="11" textLength="100" lengthAdjust="spacingAndGlyphs">Selection element</text>
-    <circle class="acc" cx="368" cy="208" r="3"/><text class="ink" x="378" y="212" font-size="11" textLength="64" lengthAdjust="spacingAndGlyphs">WPA3 / PMF</text>
+    <circle class="acc" cx="368" cy="208" r="3"/><text class="ink" x="378" y="212" font-size="11" textLength="92" lengthAdjust="spacingAndGlyphs">WPA3-Enterprise</text>
   </g>
 </svg>
