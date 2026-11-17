@@ -4,7 +4,7 @@
      data-cap-1="Domain (FQDN): names the home operator. The device uses it to recognise its own provider's network."
      data-cap-2="NAI realm: the @realm part of the login. It routes the authentication to the correct identity provider."
      data-cap-3="RCOI: a roaming-consortium identifier the network advertises to say which federation (such as OpenRoaming) it belongs to."
-     data-cap-4="PLMN: identifies a mobile carrier's network - used for SIM-based, cellular-style Wi-Fi offload.">
+     data-cap-4="PLMN: identifies a mobile carrier's network by its country code (MCC) and network code (MNC) - used for Wi-Fi offload.">
   <style>
     .id-detail text { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
     .id-detail .bg{fill:var(--soft,#e8faf1)} .id-detail .acc{fill:var(--acc,#1aad55)}
@@ -50,7 +50,7 @@
   </g>
   <g class="row r4">
     <text class="ink" x="166" y="224" font-size="13" font-weight="760" textLength="50" lengthAdjust="spacingAndGlyphs">PLMN</text>
-    <text class="val" x="300" y="224" font-size="12" textLength="64" lengthAdjust="spacingAndGlyphs">310 / 410</text>
+    <text class="val" x="300" y="224" font-size="12" textLength="66" lengthAdjust="spacingAndGlyphs">MCC + MNC</text>
   </g>
 
   <!-- per-step highlight + check -->
